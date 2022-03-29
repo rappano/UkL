@@ -31,7 +31,7 @@ public class Transaksi {
         
         this.idClient.add(1); 
         this.idJenisLaundry.add(2); 
-        this.banyak.add(7);
+        this.banyak.add(4);
     }
     @SuppressWarnings("empty-statement")
     public void prosesTransaksi(Client member, Transaksi transaksi, JenisLaundry barang){
