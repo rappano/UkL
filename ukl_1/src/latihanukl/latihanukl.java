@@ -18,6 +18,7 @@ public class latihanukl {
     Transaksi t = new Transaksi ();
     Laporan l = new Laporan ();
     
+    l.Laporan(p);
     l.laporan(j);
     l.laporan(c);
     l.laporan(t, j);
