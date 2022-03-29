@@ -17,10 +17,18 @@ public class Laporan {
         System.out.println(); 
         System.out.println("Tabel Laundry"); 
         System.out.println();
-        System.out.println("Jenis Laundry \tDurasi \tHarga"); 
+        System.out.println("Jenis Laundry \tDurasi/jam \tHarga"); 
         for (int i = 0; i < x; i++) {
-        System.out.println(barang.getJenisLaundry(i)+"\t"+ barang.getDurasi(i)+"\t"+barang.getHarga(i));
+        System.out.println(barang.getJenisLaundry(i)+"\t"+ barang.getDurasi(i)+"\t\t"+barang.getHarga(i));
         }
+    }
+    public void Laporan (Petugas petugas){
+        System.out.println("Nama Petugas \talamat \t\ttelepon \tjabatan");
+        System.out.println(petugas.getNama(0)+"\t"+"\t"+petugas.getAlamat(0)+"\t"+"\t"+petugas.getTelepon(0)+"\t"+petugas.getJabatan(0));
+        System.out.println(petugas.getNama(1)+"\t"+"\t"+petugas.getAlamat(1)+"\t"+"\t"+petugas.getTelepon(1)+"\t"+petugas.getJabatan(1));
+        System.out.println(petugas.getNama(2)+"\t"+"\t"+petugas.getAlamat(2)+"\t"+"\t"+petugas.getTelepon(2)+"\t"+petugas.getJabatan(2));
+        System.out.println(petugas.getNama(3)+"\t"+"\t"+petugas.getAlamat(3)+"\t"+"\t"+petugas.getTelepon(3)+"\t"+petugas.getJabatan(3));
+        
         }
             public void laporan(Client member){ 
                 int x=member.getJmlClient();
@@ -30,7 +38,7 @@ public class Laporan {
         System.out.println();
         System.out.println("Nama \tAlamat \t\tTelepon \tSaldo"); 
         for (int i = 0; i < x; i++) {
-        System.out.println(member.getNama(i)+"\t"+ member.getAlamat(i)+"\t"+member.getTelepon(i)+"\t"+ member.getSaldo(i));
+        System.out.println(member.getNama(i)+"\t"+ member.getAlamat(i)+"\t\t"+member.getTelepon(i)+"\t"+ member.getSaldo(i));
         }
     }
         public void laporan(Transaksi transaksi, JenisLaundry barang){ 
