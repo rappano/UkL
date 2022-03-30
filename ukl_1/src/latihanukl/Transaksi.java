@@ -61,8 +61,9 @@ public class Transaksi {
                 int total=0;
                 int x = idBarang.size();
                 for (int j = 0; j<x;j++){
-                int jumlah=banyak.get(j) * barang.getHarga(idBarang.get(j)); total+=jumlah; System.out.println(barang.getJenisLaundry(idBarang.get(j))+"\t"+
-                idBarang.get(j)+"\t"+ barang.getHarga(idBarang.get(j))+"\t"+ jumlah);
+                int jumlah=banyak.get(j) * barang.getHarga(idBarang.get(j)); total+=jumlah; 
+                System.out.println(barang.getJenisLaundry(idBarang.get(j))+"\t"+
+                banyak.get(j)+"\t"+ barang.getHarga(idBarang.get(j))+"\t"+ jumlah);
                 transaksi.setTransaksi(barang, idMember, idBarang.get(j), banyak.get(j));
 
             }
